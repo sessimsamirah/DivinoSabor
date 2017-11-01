@@ -9,10 +9,6 @@
         <!-- Simple header with scrollable tabs. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Divino Sabor (LOGO)</span>
-    </div> 
       <!-- Expandable Textfield -->
 <form action="#">
   <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
@@ -26,6 +22,11 @@
   </div>
 </form>
 
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Divino Sabor (LOGO)</span>
+    </div> 
+      
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
       <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Home</a>
