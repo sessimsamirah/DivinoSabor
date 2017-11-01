@@ -10,12 +10,7 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
       <!-- Expandable Textfield -->
-<form action="#">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
-      <i class="material-icons">search</i>
-    </label>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+   <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="fixed-header-drawer-exp">
@@ -26,8 +21,6 @@
                  id="fixed-header-drawer-exp">
         </div>
       </div>
-  </div>
-</form>
 
     <div class="mdl-layout__header-row">
       <!-- Title -->
