@@ -7,11 +7,17 @@
 
     <body> 
         <!-- Simple header with scrollable tabs. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" >
   <header class="mdl-layout__header">
       <!-- Expandable Textfield -->
-   <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-        mdl-textfield--floating-label mdl-textfield--align-right" style="margin-top: -10px;">
+   
+
+    <div class="mdl-layout__header-row">
+       
+      <!-- Title -->
+      <span class="mdl-layout-title">Divino Sabor (LOGO)</span>
+       <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+            mdl-textfield--floating-label mdl-textfield--align-right" style="margin-left: 80%; position: fixed; ">
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="fixed-header-drawer-exp">
           <i class="material-icons">search</i>
@@ -21,10 +27,6 @@
                  id="fixed-header-drawer-exp">
         </div>
       </div>
-
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Divino Sabor (LOGO)</span>
     </div> 
       
     <!-- Tabs -->
