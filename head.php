@@ -11,7 +11,7 @@
   <header class="mdl-layout__header">
       <!-- Expandable Textfield -->
    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-                  mdl-textfield--floating-label mdl-textfield--align-right">
+        mdl-textfield--floating-label mdl-textfield--align-right" style="margin-top: -50px;">
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="fixed-header-drawer-exp">
           <i class="material-icons">search</i>
