@@ -1,11 +1,8 @@
-<html> 
-    <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-light_green.min.css" />
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> 
-    </head>
 
-    <body> 
+
+
+<?php 
+ echo '
         <footer class="mdl-mega-footer">
   <div class="mdl-mega-footer__middle-section">
 
@@ -55,7 +52,7 @@
     <script>
       var map;
       function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
+        map = new google.maps.Map(document.getElementById("map"), {
           center: {lat: -29.7504076, lng: -50.2054378},
           zoom: 8
         });
@@ -70,12 +67,12 @@
 
   <div class="mdl-mega-footer__bottom-section" >
     <ul class="mdl-mega-footer__link-list">
-        <li><a href="https://www.wede.com.br/"><img src="images/logoWede.png" style='height: 30px; margin-right: 10px;'>Wede Software House</a></li>
+        <li><a href="https://www.wede.com.br/"><img src="images/logoWede.png" style="height: 30px; margin-right: 10px;">Wede Software House</a></li>
     </ul>
   </div>
 
 </footer>
-    </body>
+ '; 
+?> 
     
     
-</html>

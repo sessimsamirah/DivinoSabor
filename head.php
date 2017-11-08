@@ -1,11 +1,9 @@
-<html> 
-    <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-light_green.min.css" />
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> 
-    </head>
 
-    <body> 
+
+ 
+<?php
+echo '
+
         <!-- Simple header with scrollable tabs. -->
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" >
   <header class="mdl-layout__header">
@@ -31,9 +29,9 @@
       
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-      <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Home</a>
-      <a href="#scroll-tab-2" class="mdl-layout__tab">Cardápio</a>
-      <a href="#scroll-tab-4" class="mdl-layout__tab">Carrinho</a>
+      <a href="#" class="mdl-layout__tab">Home</a>
+      <a href="cardapio.php" class="mdl-layout__tab">Cardápio</a>
+      <a href="#" class="mdl-layout__tab">Carrinho</a>
     </div>
   </header>
   
@@ -58,7 +56,9 @@
     </section>
   </main>
 </div>
-    </body>
+  
+'; 
 
+?> 
 
-    <html> 
+    
