@@ -38,7 +38,7 @@
 
   <div class="mdl-mega-footer__bottom-section" >
     <ul class="mdl-mega-footer__link-list">
-        <li><a href="#">LOGO DA WEDE</a></li>
+        <li><a href="https://www.wede.com.br/"><img src="images/logoWede.png" style='height: 30px; margin-right: 10px;'>Wede Software House</a></li>
     </ul>
   </div>
 
