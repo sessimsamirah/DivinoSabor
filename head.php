@@ -32,7 +32,7 @@
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
       <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Home</a>
-      <a href="#scroll-tab-2" class="mdl-layout__tab">Portfólio</a>
+      <a href="#scroll-tab-2" class="mdl-layout__tab">Cardápio</a>
       <a href="#scroll-tab-4" class="mdl-layout__tab">Carrinho</a>
     </div>
   </header>
