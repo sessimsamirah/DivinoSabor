@@ -9,3 +9,5 @@ Tecnologias utilizadas:
 Metodologia: Scrum 
 
 Controle de versão: Git
+
+* Ainda em desenvolvimento * 
