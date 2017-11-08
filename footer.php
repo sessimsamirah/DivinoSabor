@@ -30,7 +30,39 @@
       <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
       <h1 class="mdl-mega-footer__heading">Localização</h1>
       <ul class="mdl-mega-footer__link-list">
-          <p>LALALAALLA</p> <!-- Podemos inserir a API do Google Maps-->
+          
+          
+          
+    <!-- API DO MAPS --> 
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 20%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 60%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -29.7504076, lng: -50.2054378},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXNkS6EclADgdgv6zeFMP5P66jV-OLRQQ&callback=initMap"
+    async defer></script>
       </ul>
     </div>
 
