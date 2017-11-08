@@ -22,8 +22,7 @@
       <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
       <h1 class="mdl-mega-footer__heading">Redes Sociais</h1>
       <ul class="mdl-mega-footer__link-list">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
+        <li><a href="https://www.facebook.com/DivSabor/">Facebook</a></li>
       </ul>
     </div>
 
