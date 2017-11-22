@@ -6,5 +6,8 @@
 include 'head.php';
 ?>  
 <?php
+include 'contato.php';
+?>
+<?php
 include 'footer.php';
 ?>
