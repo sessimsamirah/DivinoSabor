@@ -6,7 +6,7 @@ echo '
 
         <!-- Simple header with scrollable tabs. -->
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" >
-  <header class="mdl-layout__header">
+  <header class="mdl-layout__header" style="position: fixed;">
       <!-- Expandable Textfield -->
    
 
@@ -31,7 +31,7 @@ echo '
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
       <a href="#" class="mdl-layout__tab">Home</a>
       <a href="cardapio.php" class="mdl-layout__tab">Cardápio</a>
-      <a href="#" class="mdl-layout__tab">Carrinho</a>
+      <a href="#" class="mdl-layout__tab">Orçamento</a>
     </div>
   </header>
   
