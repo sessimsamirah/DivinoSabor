@@ -3,39 +3,79 @@
 <?php
 echo '
     
+<style>
+body {margin:0;}
 
-         <style>
-       /* Style the tab buttons */
-.tablink {
-    background-color: #7AA55D;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
+.topnav {
+  overflow: hidden;
+  background-color: #7AA55D;
 }
 
-/* Change background color of buttons on hover */
-.tablink:hover {
-    background-color: #777;
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-/* Set default styles for tab content */
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 50px;
-    text-align: center;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-        </style> 
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
 
-<button class="tablink">LOGO</button>
-<a href="index.php"><button class="tablink" onclick="openCity("Paris", this, "green">Home</button></a>
-<a href="cardapio.php"><button class="tablink" onclick="openCity("Paris", this, "green")">Cardápio</button></a>
-<button class="tablink" onclick="openCity("Paris", this, "green")">Orçamento</button> 
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+</style>
+
+<div class="topnav" id="myTopnav">
+  <a href="#">LOGO</a>
+  <a href="index.php">Home</a>
+  <a href="cardapio.php">Cardápio</a>
+  <a href="#">Orçamento</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 '; 
 ?>
