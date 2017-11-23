@@ -6,6 +6,9 @@
 include 'head.php';
 ?>  
 <?php
+include 'slide.php';
+?>
+<?php
 include 'contato.php';
 ?>
 <?php
