@@ -5,17 +5,26 @@
 
 <?php
    include 'head.php';
-    ?>  
+   include 'conecta.php'; 
+    ?>   
+
+
 <body> 
 
    
-    
+    <?php
+    $sql = "SELECT nomeProduto, descricao, preco, imagem FROM produto"; 
+    $resultado = mysqli_query($conn, $sql); 
+    if(mysqli_num_rows($resultado>0)){
+        while ($row = mysqli_fetch_assoc($resultado)){
+            
+?>
     
 
     <div class="mdl-grid" style="margin-left: 90px; position: relative;">
     
     <div class="mdl-cell mdl-cell--4-col">
-        <!-- Square card -->
+        
 <style>
 .demo-card-square.mdl-card {
   margin-top: 100px;
@@ -25,24 +34,33 @@
 .demo-card-square > .mdl-card__title {
   color: #fff;
   background:
-    url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+      url('<?php echo $row["imagem"];?>') bottom right 15% no-repeat #46B6AC;
 }
 </style>
 
 <div class="demo-card-square mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title mdl-card--expand">
-    <h2 class="mdl-card__title-text">Update</h2>
+      <h2 class="mdl-card__title-text"><?php echo $row["nomeProduto"];?></h2>
   </div>
   <div class="mdl-card__supporting-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Aenan convallis.
+    <?php
+    echo $row["descricao"];
+    ?>
   </div>
 </div>
+
     </div>
-    
-    
+    </div>
+        <?php
+                }
+    }
+    ?>
+        
+        
+
+    <!-- 
     <div class="mdl-cell mdl-cell--4-col">
-        <!-- Square card -->
+        
 <style>
 .demo-card-square.mdl-card {
   width: 320px;
@@ -68,7 +86,7 @@
     
     
     <div class="mdl-cell mdl-cell--4-col">
-        <!-- Square card -->
+        
 <style>
 .demo-card-square.mdl-card {
   width: 320px;
@@ -98,7 +116,7 @@
     <div class="mdl-grid" style="margin-left: 90px;">
      
      <div class="mdl-cell mdl-cell--4-col">
-         <!-- Square card -->
+         
 <style>
 .demo-card-square.mdl-card {
   width: 320px;
@@ -126,7 +144,7 @@
      
      
      <div class="mdl-cell mdl-cell--4-col">
-         <!-- Square card -->
+       
 <style>
 .demo-card-square.mdl-card {
   width: 320px;
@@ -154,7 +172,7 @@
      
      
      <div class="mdl-cell mdl-cell--4-col">
-         <!-- Square card -->
+         
 <style>
 .demo-card-square.mdl-card {
   width: 320px;
@@ -185,7 +203,7 @@
     <div class="mdl-grid" style="margin-left: 90px;">
         
         <div class="mdl-cell mdl-cell--4-col">
-            <!-- Square card -->
+            
 <style>
 .demo-card-square.mdl-card {
   width: 320px;
@@ -213,7 +231,7 @@
         
         
         <div class="mdl-cell mdl-cell--4-col">
-            <!-- Square card -->
+            
 <style>
 .demo-card-square.mdl-card {
   width: 320px;
@@ -241,7 +259,7 @@
         
         
         <div class="mdl-cell mdl-cell--4-col">
-            <!-- Square card -->
+            
 <style>
 .demo-card-square.mdl-card {
   width: 320px;
@@ -268,7 +286,7 @@
         </div>
 </div>
     
-    
+  
     
 </body>
 
@@ -276,3 +294,5 @@
        include 'footer.php';
     ?>  
 </html> 
+
+
