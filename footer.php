@@ -2,8 +2,17 @@
 
 
 <?php 
- echo '
-        <footer class="mdl-mega-footer">
+ echo ' 
+     <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11&appId=784686741736301";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, "script", "facebook-jssdk"));</script>
+        
+<footer class="mdl-mega-footer">
   <div class="mdl-mega-footer__middle-section">
 
     <div class="mdl-mega-footer__drop-down-section">
@@ -19,7 +28,12 @@
       <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
       <h1 class="mdl-mega-footer__heading">Redes Sociais</h1>
       <ul class="mdl-mega-footer__link-list">
-        <li><a href="https://www.facebook.com/DivSabor/">Facebook</a></li>
+      <div class="fb-page"
+  data-href="https://www.facebook.com/DivSabor" 
+  data-width="340"
+  data-hide-cover="false"
+  data-show-facepile="true">
+  </div>
       </ul>
     </div>
 
