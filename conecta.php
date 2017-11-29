@@ -1,18 +1,19 @@
-<?php 
-
+<?php
 $servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "bancods";
+$password = "ifrs";
+$dbname = "bancods"; 
 
-$conn = mysql_connect("localhost", "root", "");
 
-if (!$conn) {
-    die("Falha na coneco com o Banco de Dados!");
-}
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-$db = mysql_select_db("bancods");
+if ($conn->connect_error) {
+    die("Falha na conexão: " . $conn->connect_error);
+} 
+//echo "Conectado!";
 
+mysqli_close($conn);
 
 ?>
+
 
