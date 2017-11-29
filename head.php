@@ -60,10 +60,10 @@ body {margin:0;}
 </style>
 
 <div class="topnav" id="myTopnav">
-  <a href="#">LOGO</a>
+  <a href="index.php"><img src="images/logo.jpg" style="width: 80px;"></a>
   <a href="index.php">Home</a>
   <a href="cardapio.php">Cardápio</a>
-  <a href="#">Orçamento</a>
+  <a href="orcamento.php">Orçamento</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
