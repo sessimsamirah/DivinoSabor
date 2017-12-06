@@ -4,7 +4,7 @@
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> 
 
 <?php
-include 'header.php';
+//include 'header.php';
 include 'head.php';
 ?> 
 <?php 
