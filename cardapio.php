@@ -28,7 +28,7 @@ if (mysqli_num_rows($resultado) > 0) {
       <img src="images/FOTA2.png" width="300" height="200">
     </a>
     <div class="desc"><?php echo .$row["nomeProduto"]?></div>
-    <div class="desc"><?php echo '.$row[descricao]'?></div>
+    <div class="desc"><?php echo .$row["descricao"]?></div>
   </div>
 </div>
 
